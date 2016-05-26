@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- css file for media query -->
+<link href="css/structure.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <section class="container-fluid text-center" id="heading">
+    <div class="row">
+      <img src="img/restaurant_data/restaurant_data_heading.png">
+    </div>
+  </section>
+
+  <section class="container-fluid text-center" id="intro">
+    <div class="row">
+      <h2>INTRODUCTION</h2>
+      <p><span style="font-weight:bold;font-size:24px;color:#35657c;">"Know Your Revenue"</span> is an interactive dashboard I designed for a cloud service company in my first year of graduate study in Simon Fraser University as a research project, to help their customers analyze business data hosted on their cloud more easily. 
+      The specific customer is a chain restaurant company, who business is across both US and Canada. They would like to know what factors can affect their revenue, and if there is a much easier way to assist them in making business decisions based on data instead of boring tables or simple Excel charts.Therefore, after months of discussions with the cloud service company, we agreed on the development a new tool to solve their problems. <span style="font-weight:bold;color:#35657c;">The users</span> of the tool are company managers and their data analysts. <span style="font-weight:bold;color:#35657c;">The data</span> needed to be analyzed is large and multi-dimensional, and design and development cycle for the tool is about 1 month.</br></br>
+      <span style="color:grey;">To comply with my non-disclosure agreement, I have omitted confidential information such as names of the two companies.</span>
+     </p>
+    </div>
+    <div class="row" id="intro_nav_row">
+       <a href="home.html#projects"><p>NOT INTERESTED? HAVE A LOOK AT OTHER PROJECTS ＞</p></a>
+    </div>
+  </section>
+
+<section class="container-fluid text-center" id="c_and_s">
+      <h2>CHALLENGES & SOLUTIONS</h2>
+
+      <div class="table-responsive" id="c_s_table">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>CHALLENGE</th>
+        <th>SOLUTION</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span style="font-size:14px;font-weight:bold;">Problems with tables & simple charts</span></br>The restaurant data was stored as dataframes with shared dimensions across different tables. It was impossible to gain any insights from the complex, multi-dimensional raw data. They also tried to use Excel to generate some simple charts, but it was hard to show the relations between different dimensions.</td>
+        <td><span style="font-size:14px;font-weight:bold;">Interactive Dashboard</span></br>We decided to build a dashboard for KPI related data dimensions, and placed charts with strong relations together in the same view. Interactions included filtering, brushing and linking, meaning that any updates to one chart would affect others.</td>
+      </tr>
+      <tr>
+        <td><span style="font-size:14px;font-weight:bold;">Looking for the best way to implement</span></br>At first, we were trying to use IPython ran on Jupyter Notebook which was already set up in the cloud service company server. Although IPython has some good libraries to handle data and generate visualizations, but customization and flexibiltiy of Jupyter Notebook is limited.</td>
+        <td><span style="font-size:14px;font-weight:bold;">Web Application</span></br>We decided to develop a web application using HTML5/CSS3, and Javascript, which is powerful enough with many libraries such as d3.js & dc.js to create SVG charts. We implemented locally at first, and it would be easy to move the tool to their servers.</td>
+      </tr>
+      <tr>
+        <td><span style="font-size:14px;font-weight:bold;">Choice of data dimensions and chart types</span></br>There were tons of data dimensions in our customers raw data sets, but at the first stage, they only cared about which factors could affect their revenue. We were not familiar with their database at first, and exploring multiple tables with outliers indeed caused us some troubles to define dimensions.</td>
+        <td><span style="font-size:14px;font-weight:bold;">Revenue Driven Factors</span></br>We used IPython to do some data mining work, such as filtering outliers, printing all dimensions related to revenue. And we came up with the list of revenue driven factors that would affect revenue in terms of information from data, and then we held meetings and discuss with the company stuffs from data analysts to CEO to confirm their needs. We decided mainly use bar chart to achieve best comparisons and line chart to show the trend of change.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section class="container-fluid text-center" id="my_role">
+  <h2>MY ROLE</h2>
+  <div class="col-sm-4">
+      <span class="glyphicon glyphicon-pencil my_role_logo"></span>
+      <h4>User Interface Design</h4>
+      <p><span style="color:#35657c;">Layout</span></br>2 tab pages and 7 charts, and severl interaction elements,
+      </br><span style="color:#35657c;">Font standard size</span></br>headings, descriptions and chart titles, labels, and tooltips, 
+      </br><span style="color:#35657c;">Color scheme</span></br>red as the main color that was consistent with the restaurant logo, and less than 10 colors within one color category for charts,
+      </br><span style="color:#35657c;">Finalized the design</span></br>I gathered feedback from visualization area experts and modified draft design.</p>
+  </div>
+  <div class="col-sm-4">
+      <span class="glyphicon glyphicon-hdd my_role_logo"></span>
+      <h4>Development of Functionalities</h4>
+      <p><span style="color:#35657c;">Languages</span></br>HTML5/CSS3, JavaScript, 
+      </br><span style="color:#35657c;">Libraries</span></br>d3.js, dc.js, crossfilter.js, bootstrap.js, jquery.js, 
+      </br><span style="color:#35657c;">SVG charts</span></br>I created 9 SVG charts across 5 chart types - bar chart, row chart, scatter plot, line chart, bubble chart,
+      </br><span style="color:#35657c;">Interactions</span></br>brushing and linking between charts, filtering based on selections, drop-down menu, and viewport, zoom in/out, onhover tooltips. </p>
+  </div>
+  <div class="col-sm-4">
+      <span class="glyphicon glyphicon-user my_role_logo"></span>
+      <h4>Use Case Test</h4>
+      <p><span style="color:#35657c;">Definition of user case</span></br>I defined 3 use cases test the functionalities of our dashboard, 
+      </br><span style="color:#35657c;">Mid-implementation Stage Feedback</span></br>I gathered feedback from visualization area experts including our professor and adjusted some functionalities,
+      </br><span style="color:#35657c;">Evaluation</span></br>A small scale of feasibility study was conducted among 10 users. 5 tasks related to business questions were given to participants using the dashboard. Evaluation was based on observations of users' reactions and records of what slowed them down.</p>
+  </div>
+</section>
+
+<section class="container-fluid text-center" id="achievement">
+  <h2>ACHIVEMENTS</h2>
+  <div class="row">
+	  <div class="col-sm-6">
+	    <h4>REVENUE DRIVEN FACTORS Tab - Initial Look</h4>
+	    <img src="img/restaurant_data/revenue_tab.png">
+	  </div>
+	  <div class="col-sm-6">
+	    <h4>REVENUE DRIVEN FACTORS Tab - How Does It Interact?</h4>
+	    <img src="img/restaurant_data/revenue_tab_interact.png">
+	  </div>
+  </div>
+  <div class="row">
+	  <div class="col-sm-6">
+	    <h4>GUEST COUNT DISTRIBUTION Tab - Initial Look</h4>
+	    <img src="img/restaurant_data/detail_tab.png">
+	  </div>
+	  <div class="col-sm-6">
+		<h4>GUEST COUNT DISTRIBUTION Tab - How Does It Interact?</h4>
+		<img src="img/restaurant_data/detail_tab_interact.png">
+	  </div>
+  </div>
+  <div class="row" id="achievement_nav_row">
+      <a href=""><p>FOR MORE DETAILS ＞</p></a>
+      <a href="home.html#projects"><p>HAVE A LOOK AT OTHER PROJECTS ＞</p></a>
+  </div>
+</section>
+</body>
+</html>

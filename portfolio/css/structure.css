@@ -1,0 +1,164 @@
+body{
+  font-family:Tahoma;
+}
+
+*,*::before,*::after{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+[class^='grid-col-']{
+  float:left;
+}
+
+/*@media screen and (max-width: 930px) {
+  #brief_intro{
+    top:15%;
+  }
+  #start_to_know_me{
+    top:75%;
+  }
+  #name{
+    top:20%;
+  }
+  #role{
+    top:45%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #brief_intro{
+    height:40%;
+  }
+  #start_to_know_me{
+    top:65%;
+  }
+  #name{
+    top:15%;
+  }
+  #role{
+    top:35%;
+  }
+}
+*/
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+  /*  #brief_intro{
+    height:35%;
+  }
+  #start_to_know_me{
+    top:55%;
+    font-size:12px;
+  }
+  #name{
+    top:15%;
+  }
+  #role{
+    top:30%;
+  }
+    #role span{
+      font-size:16px;
+    }*/
+    #email_input{
+      padding:0;
+    }
+}
+
+/*@media screen and (max-width: 595px) {
+    #brief_intro{
+      top:10%;
+    height:30%;
+  }
+  #start_to_know_me{
+    top:45%;
+    font-size:12px;
+  }
+  #name{
+    top:10%;
+  }
+  #role{
+    top:25%;
+  }
+    #role span{
+      font-size:16px;
+    }
+}*/
+
+/*@media screen and (max-width: 495px) {
+  #landing_section_img{
+    top:15px;
+  }
+  #brief_intro{
+    top:10%;
+    height:20%;
+  }
+  #start_to_know_me{
+    top:35%;
+    font-size:12px;
+    width:25%;
+  }
+  #name{
+    top:10%;
+  }
+  #role{
+    top:20%;
+  }
+    #role span{
+      font-size:12px;
+    }
+}*/
+
+/*@media screen and (max-width: 400px) {
+  #brief_intro{
+    top:15%;
+    height:15%;
+  }
+  #start_to_know_me{
+    top:32%;
+    font-size:12px;
+    width:30%;
+    left:30%;
+  }
+
+  #name{
+    top:15%;
+  }
+  #role{
+    top:22%;
+  }
+  }
+    #role span{
+      font-size:10px;
+    }
+}*/
+
+/*@media screen and (max-width: 320px) {
+  #landing_section_img{
+    top:25px;
+  }
+  #brief_intro{
+    top:12%;
+    height:15%;
+  }
+  #start_to_know_me{
+    top:30%;
+    font-size:12px;
+    width:40%;
+    left:30%;
+  }
+  #name{
+    top:12%;
+  }
+  #role{
+    top:18%;
+    width:90%;
+    left:5%;
+  }
+    #role span{
+      font-size:10px;
+    }
+}*/

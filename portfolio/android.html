@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- css file for media query -->
+<link href="css/structure.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body leftmargin=0 topmargin=0  oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'>
+	<div class="row project_header">
+	    <img src="img/android/android_header_pic.png">
+	</div>
+	<div class="row project_intro_android">
+	    <h1>INTRODUCTION</h1>
+		<p>The Android OS has become the most popular mobile platform. There are millions of applications with rich features such as context-aware services available for battery-powered Android devices. These applications use a lot of system resources and are energy consumptive. Unfortunately, battery capacity is limited, and any irresponsible application development could lead to energy waste. Existing studies reveal that many popularly downloaded applications in fact suffer from energy inefficiency issues. Some of them download unnecessary advertisements, some leave network tails, some require sensors to be ON for too long and others keep syncing information way too often. However, none of the existing studies have a clear categorization of the causes of energy inefficiency. Therefore, in this project, our task is to conduct a large-scale investigation of commercial as well as open-source Android applications, figure out the causes of those energy inefficiency problems, and classify them into different categories according to their characteristics. This categorization can contribute to the design of energy inefficiency diagnosis tools and also serve as guidelines to real-world developers who wish to improve the energy efficiency of their applications.</p>
+	<div class="android_link"><a href="home.html#projects">NOT INTERESTED? HAVE A LOOK AT OTHER PROJECTS >></a></div>
+
+	</div>
+	
+	<div class="row project_mywork_android">
+	    <h1>WHAT'S MY ROLE ?</h1>
+		<p>I worked with PhDs to carry on manual analysis on thousands of bug issues and user reports among nearly 200 Android Applications. We designed 4 metrics of effort measurement to make comparison between general bugs and energy inefficient bugs (2276 reports), and conducted permission analysis on 173 open source apps and 229 affected commercial apps to make sure sensor and wake lock related to the problem. </br></br>In the project, we conducted the research according to 3 questions. Shown as below.
+	    </p>
+		<div class="row rq">
+		  <div class="col-sm-4">
+			   <h2>Research Q1</h2>
+			   <p>Problem magnitude: How severe are the energy inefficiency problems in Android applications?</p>
+		  </div>
+		  <div class="col-sm-4">
+			  <h2>Research Q2</h2>
+			  <p>Diagnosis and fixing efforts: How much effort do developers spend on diagnosing and fixing the problems? What information do they need for diagnosis?</p>
+		  </div>
+		  <div class="col-sm-4">
+		    <h2>Research Q3</h2>
+		    <p>Major causes and common patterns: What are the major causes of the problems? What common patterns can we distill to enable automated diagnosis?</p>
+		  </div>
+		</div>
+	</div>
+
+	<div class="row r1">
+	  <div class="col-sm-6">
+	    <h1>Research Question 1</h1>
+	    <p>We have to study large scale of applications manually (around 400), which takes a lot of time. The main method of our study can be described as below. For open-source applications, we studied (1) bug report and related discussions.(2)bug-fixing patches.(3)revision commit logs. For commercial applications, we studied (1)basic app info: category, version, downloads etc.(2)release log.(3)user reviews.If we can find some comments or issues that contain the key word, such as battery drainer, etc, we will consider this application has inefficient problems which need to be fixed.</br>Our result shows that 21.17% of our investigation applications seriously suffer from energy inefficiency problems, and this affects millions of users, which indicate that energy inefficient problems among android applications are very severe, and it may affect the users’ choices of installing the application or deleting it.</p>
+	  </div>
+	  <div class="col-sm-6">
+	    <img src="img/android/r1_pic1.jpg">
+	  </div>
+	</div>
+
+
+	<div class="row r2">
+		<h1>Research Question 2</h1>
+		<p>In order to answer understand developers’ efforts and information needs in diagnosing and fixing energy inefficiency problems, we studied 24 of the 29 fixed problems in our investigated open-source applications. Five fixed problems were ignored because we failed to find the bug fixing revision. We also studied the 11 confirmed but not fixed energy problems in the open-source applications. We checked how long the bug reports have been open and the related discussions.</br>The detailed implementation can be described as below. At first, we design Four Metrics of Effort Measurement. (1) Issue Open Duration (Days) (2) # of Revisions to Fix (3) # of Changed Classes (4) # of Changed Methods. And then we summarize results of Efforts Spent on Energy Inefficient Problems. Finally, we compare the energy inefficiency issues with General Bugs.</br></br>The result indicates that the issue open duration(days) of energy inefficient issues is higher that the duration of general bug issues, which can be used to answer our second question that energy inefficient issues may take more efforts to be fixed by developers.</p>
+
+		<div class="col-sm-3"><img src="img/android/r2_pic1.jpg"></div>
+		<div class="col-sm-3"><img src="img/android/r2_pic2.jpg"></div>
+		<div class="col-sm-3"><img src="img/android/r2_pic3.jpg"></div>
+		<div class="col-sm-3"><img src="img/android/r2_pic4.jpg"></div>
+	</div>
+
+	<div class="row r3">
+		<h1>Research Question 3</h1>
+		<p>We mainly focus on two related common patterns first currently.</br></br>
+		1 Sensor related : Applications like Wi-fi, GPS require certain sensors for working. If these sensors are left ON for a long time, battery will drain a lot.</br>
+		2 Wake Lock related : A wake lock means that there is an Android mechanism indicates to the Operation System that the application requires the device to stay on. Misuse use of wake lock significantly affecting battery performance.</br></br>In order to make sure whether sensor and wake lock are truly related to energy inefficient problems, we conduct permission analysis on the 173 open-source applications as well as the 229 affected commercial applications.</br></br>The results of permission analysis strongly indicate that sensors and wake locks are closely associated with the energy inefficiency problems in Android applications. That is to say, sensor and wake lock can be described as two major causes of energy inefficient problems.</p>
+		<p><span style="font-weight:bold;">NOTES: </span></br>First, this project is an academic research project, so the words description are much more than figures. I have already summarized some of the words. Thanks for your patience to read them.Second, since the project is related to the PhD research paper of the lab. It cannot be copied or applied as any commercial uses, thank you for your understanding.</p>
+	</div>
+
+	<div class="android_link"><a href="home.html#projects">HAVE A LOOK AT OTHER PROJECTS >></a></div>
+	
+</body>
+</html>

@@ -1,0 +1,751 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.row{
+	margin:0;
+}
+/*bootstrap nav bar*/
+.navbar {
+    margin-bottom: 0;
+    background-color: #f4fbeb;
+    z-index: 100;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: grey !important;
+    font-size:bold;
+    font-family:'BebasNeueRegular';
+    font-size:16px;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #d96345 !important;
+    background-color: #f4fbeb !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+/*slide in elements*/
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/*about me section logo*/
+.logo-small {
+    color: #d96345;
+    font-size: 50px;
+}
+
+
+/*cover page style*/
+#cover_page{
+  background: url("landing_img3.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width:100vw;
+  height:100vh;
+}
+#brief_intro{
+	width:92vw;
+	height:50vh;
+	background: rgba(22,22,22, 0.3);
+	margin: 25vh auto;	
+}
+#name{
+	width:60vw;
+}
+
+/*#start_to_know_me{
+	width:20%;
+	text-align:center;
+	color:white;
+	font-size:16px;
+	background-color: black;	
+	padding:10px;
+	position:absolute;
+	top:85%;
+	left:40%;
+	z-index:3;
+}
+#start_to_know_me:hover{
+    -moz-transition: all 0.4s ease-in; 
+    -webkit-transition: all 0.4s ease-in; 
+    -o-transition: all 0.4s ease-in;
+	background-color: white;
+	border:solid 1px black;
+	color:black;
+}*/
+
+/*home page style*/
+#landing_section{
+	padding:0;
+	background-color: #f4fbeb;
+}
+#my_photo{
+	margin-top:12%;
+}
+#landing_section h3{
+	margin-top:3%;
+	font-family:'BebasNeueRegular';
+	/*font-weight:bold;*/
+	font-size:32px;
+}
+
+#landing_section h4{
+	margin-top:3%;
+	margin-bottom:5%;
+	font-size:24px;
+}
+
+/*about me section style*/
+#about_me_section{
+	width:100%;
+	height:auto;
+	background-color:white;
+    margin-top:30px;
+    padding-top:80px;
+}
+#project_button{
+	width:20%;
+	/*height:40px;*/
+	text-align:center;
+	color:white;
+	font-size:16px;
+	background-color: #60130b;	
+	display:inline-block;
+	margin-top:10px;
+	margin-bottom:50px;
+	padding:10px;
+}
+#project_button:hover{
+    -moz-transition: all 0.4s ease-in; /* Firefox 4 */
+    -webkit-transition: all 0.4s ease-in; /* Safari 和 Chrome */
+    -o-transition: all 0.4s ease-in;
+	background-color: white;
+	border:solid 1px #60130b;
+	color:#60130b;
+}
+#project_button_label{
+	width:100%;
+	margin-top:100px;
+	text-align:center;
+}
+
+/*footer style*/
+#contact_feedback_section{
+  padding-top:80px;
+  width:100%;
+  background-color: #d96345;
+  color:white;
+}
+#name_input{
+	padding:0;
+}
+#email_input{
+	padding-left:15px;
+	padding-right:0;
+}
+#copyright{
+	margin-top:40px;
+	margin-bottom:20px;
+	text-align:center;
+	color:white;
+}
+#feedback_form_label{
+	padding:0;
+	font-size:20px;
+	margin-bottom:15px;
+}
+#submit_button{
+	padding:0;
+}
+#social_media_link{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+#social_media_link img{
+	width:10%;
+	height:auto;
+}
+
+/*projects section style*/
+#projects a{
+	text-decoration: none;
+	color:grey;
+}
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.thumbnail:hover{
+	color:#3c4f3c;
+}
+#projects{
+	width:100%;
+	overflow:hidden;
+	padding-top:50px;
+	padding-bottom:60px;
+	background-color:#ddf6cf;
+}
+#projects h3{
+	margin:50px 0 50px 0;
+}
+
+/*Android project page style*/
+.project_header img{
+	width:100vw;
+}
+.project_intro_android
+{
+	background-color:#f5f3ed;
+}
+.project_intro_android h1
+{
+	text-align:center;
+	color:#666666;
+	font-family:Tahoma;
+	font-size:32px;
+	font-weight:bold;
+	margin:0px;
+	padding-top:5%;	
+}
+.project_intro_android p
+{
+	color:#666666;
+	font-family:Segoe UI;
+	font-size:16px;
+	padding:5% 5%;
+}
+.project_mywork_android
+{
+	background-color:#fff;
+}
+.project_mywork_android h1
+{
+	text-align:center;
+	color:#666666;
+	font-family:Tahoma;
+	font-size:32px;
+	font-weight:bold;
+	padding-top:5%;	
+}
+.project_mywork_android p
+{
+	color:#666666;
+	font-family:Segoe UI;
+	font-size:16px;
+	padding:2% 5%;
+	/*text-align:center;*/
+}
+.rq p{
+	padding:0;
+}
+.rq h2
+{
+	text-align:center;
+	color:#8ab21d;
+	font-family:Tahoma;
+	font-size:18px;
+	font-weight:normal;
+	border-top:2px solid #8ab21d;
+	padding-top:2%;
+}
+.rq div{
+	padding:2% 5%;
+}
+
+.r1 div{
+	padding:2% 5%;
+}
+.r1 h1
+{
+	color:#8ab21d;
+	font-family:Tahoma;
+	font-size:24px;
+	font-weight:normal;
+	padding-top:5%;
+}
+.r1
+{
+	background-color:#f5f3ed;
+}
+.r1 p
+{
+	color:#666666;
+	font-family:Segoe UI;
+	font-size:16px;
+}
+.r1 img
+{
+	width:100%;
+	padding-top:15%;
+}
+.r2 h1{
+	color:#8ab21d;
+	font-family:Tahoma;
+	font-size:24px;
+	font-weight:normal;
+	padding:2% 5%;
+}
+.r2 p{
+	color:#666666;
+	font-family:Segoe UI;
+	font-size:16px;
+	padding:0 5%;
+}
+.r2 div{
+	padding:2% 2%;
+}
+.r2 img{
+	width:100%;
+	height:auto;
+}
+.r3{
+	background-color:#f5f3ed;
+}
+.r3 h1{
+	color:#8ab21d;
+	font-family:Tahoma;
+	font-size:24px;
+	font-weight:normal;
+	padding:2% 5%;
+}
+.r3 p{
+	color:#666666;
+	font-family:Segoe UI;
+	font-size:16px;
+	padding:0 5%;
+}
+.android_link{
+	padding:2% 5%;
+}
+.android_link a{
+	text-decoration: none;
+	color:#8ab21d;
+	font-size:18px;
+}
+/*restaurant data dashboard project page style*/
+#heading{
+	padding:0;
+}
+#heading img{
+	padding:0;
+	width:100%;
+}
+#intro{
+	background-color:white;
+	padding:2%;
+}
+#intro p{
+	font-size:16px;
+	padding:5%;
+	text-align: left;
+}
+#intro_nav_row a{
+	color:#35657c;
+	text-decoration: none;
+}
+#intro_nav_row p{
+	padding-left:5%;
+	padding-top:0;
+	padding-bottom:0;
+}
+#my_role{
+	background-color:white;
+	/*background-color:#35657c;*/
+	padding-bottom:5%;
+}
+#my_role p{
+	color:black;
+}
+#my_role h2{
+	padding-top:2%;
+	padding-bottom:5%;
+	color:#35657c;
+	/*text-align: left;*/
+}
+#my_role h4{
+	color:#35657c;
+	font-weight:bold;
+}
+.my_role_logo{
+	color:#35657c;
+	font-size:36px;
+	margin-bottom:5%;
+}
+#c_and_s{
+	background-color:#dceef6;
+}
+#c_and_s p{
+	font-size:16px;
+	padding:5%;
+}
+#c_and_s h2{
+	padding:2%;
+}
+#c_s_table{
+	padding-left:5%;
+	padding-right:5%;
+	padding-bottom: 5%;
+	text-align:left;
+}
+#achievement{
+	background-color:#35657c;
+}
+#achievement h2{
+	color:white;
+	padding:2%;
+}
+#achievement img{
+	width:100%;
+}
+
+#achievement h4{
+	color:white;
+	padding:5%;
+}
+#achievement a{
+	text-decoration: none;
+	color:#e7942c;
+	font-size:18px;
+	text-align: left;
+}
+#achievement_nav_row{
+	margin:2%;
+}
+
+/*pop project page style*/
+#project_header img{
+	width:100%;
+}
+#project_intro_pop h1
+{
+	text-align:center;
+	color:#666666;
+	font-family:Tahoma;
+	font-size:32px;
+	font-weight:bold;
+	padding:5%;
+	padding-bottom:0;
+}
+#project_intro_pop p
+{
+	color:#666666;
+	font-family:Segoe UI;
+	font-size:16px;
+	padding:5%;
+}
+#project_intro_pop a{
+	color:#5188e9;
+	font-family:Tahoma;
+	font-size:16px;
+	padding-bottom:0;
+	text-decoration: none;	
+	display:block;
+	padding-left:5%;
+	padding-bottom:2%;
+}
+#project_core_pop
+{
+	background-color:#f5f3ed;
+}
+#project_core_pop h1
+{
+	text-align:center;
+	color:#666666;
+	font-family:Tahoma;
+	font-size:32px;
+	font-weight:bold;
+	padding:5%;	
+	padding-bottom:0;
+}
+#project_core_pop p
+{
+	color:#666666;
+	font-family:Segoe UI;
+	font-size:16px;
+}
+
+#project_core_pop h2
+{
+	text-align:left;
+	color:#5188e9;
+	font-family:Tahoma;
+	font-size:18px;
+	font-weight:normal;
+	padding-bottom:2%;
+	border-bottom:5px solid #5188e9;
+}
+.project_core_pop_item{
+	padding:4%;
+}
+#detail h1
+{
+	color:#5188e9;
+	font-family:Tahoma;
+	font-size:32px;
+	font-weight:bold;
+	padding-left:2%;
+	margin:5%;
+	margin-bottom:0;
+	border-left:solid 10px #5188e9;
+}
+
+#detail p
+{
+	color:#666666;
+	font-family:Tahoma;
+	font-size:16px;
+	padding:5%;
+	padding-bottom:0;
+}
+#detail img{
+	width:100%;
+	padding:5%;
+}
+
+#detail2 h1{
+	color:#5188e9;
+	font-family:Tahoma;
+	font-size:32px;
+	font-weight:bold;
+	padding-left:2%;
+	margin:5%;
+	margin-bottom:0;
+	border-left:solid 10px #5188e9;
+}
+#detail2 p{
+	padding:5%;
+	font-size:16px;
+	font-family:Tahoma;
+}
+#detail2 img{
+	width:100%;
+	padding:10%;
+	padding-top:0;
+	padding-bottom:0;
+}
+
+#detail3 h1{
+	color:#5188e9;
+	font-family:Tahoma;
+	font-size:32px;
+	font-weight:bold;
+	padding-left:2%;
+	margin:5%;
+	margin-bottom:0;
+	border-left:solid 10px #5188e9;
+}
+
+#detail3 p{
+    padding:5%;
+	font-size:16px;
+	font-family:Tahoma;
+	padding-bottom:0;
+}
+
+#detail3 img{
+	width:100%;
+	padding:22%;
+	padding-top:0;
+	padding-bottom:0;
+}
+#detail3 a{
+	color:#5188e9;
+	font-family:Tahoma;
+	font-size:16px;
+	padding-bottom:0;
+	text-decoration: none;	
+	display:block;
+	padding-left:5%;
+	padding-bottom:2%;
+}
+
+/*lenovo cowork project/cloud service/drawing panel page style*/
+.project_header img{
+	width:100%;
+}
+.project_intro h1
+{
+	text-align:center;
+	color:#666666;
+	font-family:Tahoma;
+	font-size:32px;
+	font-weight:bold;
+	padding-top:5%;
+}
+.project_intro p
+{
+	color:#666666;
+	font-family:Segoe UI;
+	font-size:16px;
+	padding:5% 5%;
+}
+.project_mywork
+{
+	background-color:#f5f3ed;
+}
+.project_mywork h1
+{
+	text-align:center;
+	color:#666666;
+	font-family:Tahoma;
+	font-size:32px;
+	font-weight:bold;
+	padding:5%;
+}
+.mywork_pic{
+	padding:5%;
+}
+.project_mywork p
+{
+	color:#666666;
+	font-family:Segoe UI;
+	font-size:16px;
+}
+.project_mywork img
+{
+	width:100%;
+}
+.project_demo{
+	padding:10%;
+	padding-top:5%;
+}
+.project_demo h1
+{
+	text-align:center;
+	color:#666666;
+	font-family:Tahoma;
+	font-size:32px;
+	font-weight:bold;
+}
+.project_demo p
+{
+	color:#666666;
+	font-family:Tahoma;
+	font-size:20px;
+	text-align: center;
+	font-weight:bold;
+	padding:5%;
+
+}
+.project_demo img
+{
+	width:100%;
+}
+.notes{
+	padding-left:5%;
+	padding-right:5%;
+	font-family:Segoe UI;
+	font-size:16px;
+}
+.return{
+	padding-left:5%;
+	padding-bottom:5%;
+}
+.return a{
+	text-decoration: none;
+	font-size:16px;
+	color:#e22a51;
+}
+
+/*user study cva page style*/
+.user_study_cva_header img{
+	width:100%;
+
+}
+.nav_img{
+	width:25%;
+	padding:5%;
+	padding-bottom:0;
+}
+
+.user_study_cva_intro p{
+	padding:5% 5%;
+	font-size:16px;
+	font-family:Tahoma;
+}
+.user_study_cva_method{
+	/*background-color: #faca06;*/
+}
+.user_study_cva_method p{
+	padding:0 5%;
+	font-size:16px;
+	font-family:Tahoma;
+}
+.user_study_cva_method h2{
+	padding:5% 5%;
+	color:#ed7d31;
+}
+.user_study_cva_results p{
+	padding:0 5%;
+	font-size:16px;
+	font-family:Tahoma;
+}
+.user_study_cva_results h2{
+	padding:5% 5%;
+	color:#97d258;
+}
+.user_study_cva_future_work p{
+	padding:0 5%;
+	font-size:16px;
+	font-family:Tahoma;
+}
+.user_study_cva_future_work h2{
+	padding:5% 5%;
+	color:#f97052;
+}

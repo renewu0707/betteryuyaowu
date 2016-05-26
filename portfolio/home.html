@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- css file for media query -->
+<link href="css/structure.css" rel="stylesheet" type="text/css">
+
+</head>
+<!-- nav bar changes when scrolling -->
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Rene's Storyboard</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#landing_section">HOME</a></li>
+        <li><a href="#about_me_section">ABOUT ME</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact_feedback_section">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section class="container-fluid text-center" id="landing_section" >
+    <img class="img-circle img-responsive" style="display:inline" id="my_photo" src="img/my_photo.jpg" alt="I" width="300" height="300">
+    <h3>AM</h3>
+    <h4>User Experience Designer<span> ♠ </span>Developer<span> ♠ </span>Data Visualization Specialist</h4>   
+</section>
+
+
+<section id="about_me_section" class="container-fluid text-center">
+    <div class="row">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-education logo-small slideanim"></span>
+          <!-- <img id="education_icon" class="slideanim" src="img/education.png"> -->
+          <h4>Education</h4>
+          <p>Simon Fraser University</br>Interactive Arts & Technology</br><span style="font-size:14px;color:grey;">Sept 2015 - Now</span></br><span style="color:#d96345;font-weight:bold;">GPA 4.00/4.30</span></p>
+          <p>The Hong Kong University of Science & Technology</br>Information Technology(IT)</br><span style="font-size:14px;color:grey;">Sept 2012 - June 2013</span></br><span style="color:#d96345;font-weight:bold;">GPA 3.63/4.30</span></p>
+          <p>Beijing University of Posts & Telecoms</br>Information Engineering</br><span style="font-size:14px;color:grey;">Sept 2008 - June 2012</span></br><span style="color:#d96345;font-weight:bold;">Core GPA 86.28/100.00</span></p>
+        </div>
+        <div class="col-sm-4">
+          <!-- <img id="work_icon" src="img/work.png"> -->
+          <span class="glyphicon glyphicon-briefcase logo-small slideanim"></span>
+          <h4>Work Experience</h4>
+          <p>Simon Fraser University</br><span style="color:#d96345;font-weight:bold;">Research Assistant</span></br><span style="font-size:14px;color:grey;">Sept 2015 - Now</span></br>Focus on HCI, data visualization, visual analytics</p>
+          <p>New Oriental Edu & Tech Group</br><span style="color:#d96345;font-weight:bold;">Interaction Designer</span></br><span style="font-size:14px;color:grey;">Dec 2014 - June 2015</span></br>Conduct user experience research, prototyping</p>
+          <p>Microsoft (China) Co.Ltd.</br><span style="color:#d96345;font-weight:bold;">Technical Consultant</span></br><span style="font-size:14px;color:grey;">June 2013 - Sept 2014</span></br>Deliver customized platforms based on users' needs</p>
+        </div>
+        <div class="col-sm-4">
+          <!-- <img id="skills_icon" src="img/skills.png"> -->
+          <span class="glyphicon glyphicon-knight logo-small slideanim"></span>
+          <h4>Related Skills</h4>
+          <p>Programming Languages</br></br>More than 1 year experience with</br><span style="color:#d96345;font-weight:bold;">HTML5/CSS3, JavaScript, Java</span></br>Less than 1 year experience with</br>Python, SQL, C++.</p>
+          <p>Computer Software</br></br>Axure RP, Adobe Illustrator, Adobe Photoshop, Cool Edit, Windows Movie Maker</br>Microsoft Visio, Visual Studio, SharePoint, SQL MDS, Windows Azure Pack</br>Eclipse, NetBeans, Processing</p>  
+        </div>
+    </div>
+
+    <div class="grid-row" id="project_button_row">
+      <div id="project_button_label">Can't wait to introduce those interesting <span style="color:#d96345;font-weight:bold;">PROJECTS</span> I did.</div>
+      <a href="#projects"><div id="project_button">Let's go !</div></a>
+    </div>
+</section>
+
+<section id="projects" class="container-fluid text-center">
+  <h3>What did I ACHIEVE?</h3>
+  <div class="row text-center">
+    <div class="col-sm-3">
+    <a href="dynamic_dashboard.html">
+      <div class="thumbnail">
+        <img src="img/dynamic_dashboard.jpg" alt="Dynamic Dashboard">
+        <p style="color:black;"><strong>Dynamic Dashboard</strong></p>
+        <p>Development of a Tableau-like data visual analytics tool with charts recommendation algorithm based on dimensions.</p> 
+      </div>
+    </a>
+
+    </div>
+    <div class="col-sm-3">
+    <a href="user_study_cva.html">
+      <div class="thumbnail">
+        <img src="img/user_study_cva_cover.jpg" alt="Collaborative Visual Analytics">
+        <p style="color:black;"><strong>User Experience Research in CVA</strong></p>
+        <p>Qualitative analysis of needs for collaborative visual analytics systems through semi-structured interviews with data analysts.</p>
+      </div>
+    </a>
+    </div>
+    <div class="col-sm-3">
+    <a href="restaurant_data.html">
+      <div class="thumbnail">
+        <img src="img/restaurant_data.jpg" alt="Restaurant Data Dashboard">
+        <p style="color:black;"><strong>"Know Your Revenue"</strong></p>
+        <p>Development of an interactive dashboard with completely linked charts for real business data analysis of a chain restaurant.</p>
+      </div>
+    </a>
+    </div>
+      <div class="col-sm-3">
+      <a href="pop.html">
+        <div class="thumbnail">
+          <img src="img/pop.png" alt="POP Mobile Education App">
+          <p style="color:black;"><strong>"POP Mobile" Education App</strong></p>
+          <p>Prototyping of a family-school connection mobile app supporting convenient sharing and communications between teachers and parents.</p>
+        </div>
+        </a>
+    </div>
+  </div>
+  
+  <div class="row text-center">
+    <div class="col-sm-3">
+    <a href="lenovo_cowork.html">
+      <div class="thumbnail">
+        <img src="img/work_together.jpg" alt="Lenovo Co-work Platfrom">
+        <p style="color:black;"><strong>Lenovo Cowork Platfrom</strong></p>
+        <p>Prototyping of an OA platform for document management, task assignment, sharing and communications on top of Microsoft SharePoint.</p>
+      </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+    <a href="lenovo_cloud.html">
+      <div class="thumbnail">
+        <img src="img/cloud_service.jpg" alt="Lenovo Cloud Service">
+        <p style="color:black;"><strong>Lenovo Cloud Service Portal</strong></p>
+        <p>Prototyping of a portal for cloud service provider supporting virtual machines rental and tenants management service on top of Microsoft Azure.</p>
+      </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+    <a href="panel.html">
+      <div class="thumbnail">
+        <img src="img/drawing_panel.png" alt="Electrical Drawing Panel">
+        <p style="color:black;"><strong>"How Well I Draw ?"</strong></p>
+        <p>Development of a eletronic drawing game for kids under 12 to imitate a cartoon picture and get a score based on their performance.</p>
+      </div>
+      </a>
+    </div>
+      <div class="col-sm-3">
+      <a href="android.html">
+      <div class="thumbnail">
+        <img src="img/android.jpg" alt="Android App Study">
+        <p style="color:black;"><strong>Energy Inefficiency in Android Apps</strong></p>
+        <p>Investigation into hundreds of Android apps to analyze energy inefficient issues - existence, severity, and causes.</p>
+      </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid" id="contact_feedback_section">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="row">
+       <p><span class="glyphicon glyphicon-phone"></span> (+1)778-681-2807</p>
+       <p><span class="glyphicon glyphicon-envelope"></span> yuyaow@sfu.ca / wyy19900707@gmail.com</p>    
+       </div>
+       <div class="row" id="social_media_link">
+        <a href="https://www.facebook.com/rene.y.wu"><img src="img/facebook.png"></a>
+        <a href="https://www.linkedin.com/in/rainy-wu-31232984?trk=nav_responsive_tab_profile"><img src="img/linkedin.png"></a>
+        <img src="img/codepen.png">
+       </div>   
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-12" id="feedback_form_label">FEEDBACK</div>
+      <div class="row">
+        <div class="col-sm-6 form-group" id="name_input">
+          <input class="form-control"  name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group" id="email_input">
+          <input class="form-control"  name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments_input" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group" id="submit_button">
+          <button class="btn btn-default pull-left" type="submit">Submit</button>
+        </div>
+      </div> 
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12" id="copyright">Copyright ©2016 Rene Yuyao WU</div>
+  </div>
+</section>
+ 
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash
+  var hash = this.hash;
+
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 900, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+    });
+  });
+})
+
+// jquery for slide in elements
+$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- css file for media query -->
+<link href="css/structure.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body leftmargin=0 topmargin=0  oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'>
+<div class="row project_header" style="border-bottom:2px solid #eaeaea;">
+    <img src="img/drawing panel/panel_header_pic.png">
+</div>
+
+<div class="row project_intro">
+	<h1>INTRODUCTION</h1>
+	<p>"How Well I Draw" is a self-graded drawing panel that I designed for my multimedia class during the graduate study in HKUST(The Hong Kong University of Science & Technology, together with 2 team members. The goal is to design a user-friendly painting panel which users can not only practice their drawings on and save their drawings but also get a reasonable mark. We explored 3 existing algorithms: Histogram Matching, Matrix Decomposition adn Feature point based, and then designed our own similarity algorithm. Since the drawing panel aimed for kids, the whole design was lovely and colorful to attract kids' attention, and together with the joyful music, it would bring a lot of fun.
+	</br></br>
+	The drawing panel was developed based on Java.(jre 1.6, jdk 1.6)</p>
+    <div class="return"><a href="home.html#projects">NOT INTERESTED? HAVE A LOOK AT OTHER PROJECTS >></a></div>
+
+</div>
+
+<div class="row project_mywork">
+	<h1>WHAT'S MY ROLE?</h1>
+	<p style="padding-left:5%;padding-right:5%;">I took the role of panel function analysis and UI design using Eclipse and NetBeans, and assisted in picture similarity algorithm research and improvement. Please refer to the figures below. From top to bottom, left to right is Home page, Help page, Level Selection Page and Drawng Page.</p>
+
+	<div class="row">
+		<div class="col-sm-6 mywork_pic"><img src="img/drawing panel/mywork_pic1.jpg"></div>
+		<div class="col-sm-6 mywork_pic"><img src="img/drawing panel/mywork_pic2.jpg"></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6 mywork_pic"><img src="img/drawing panel/mywork_pic3.jpg"></div>
+		<div class="col-sm-6 mywork_pic"><img src="img/drawing panel/mywork_pic4.jpg"></div>
+	</div>
+	</div>
+
+</div>
+
+
+<div class="row project_demo">
+	<h1>ALGORITHM</h1>
+	<p style="font-size:16px;font-weight:normal;">The main similarity comparation algorithm is two classes, Class Binarization and Class CompareArray. The advantage of our algorithm is Not only save but give out scores; Different levels to choose for different; Lower computation cost and better effect.
+	</br></br>In Class Binarization, we input a picture and get each pixel’s R,G,B values and store in arrays.</br>
+	intr = (rgb & 16711680) >> 16;
+	intg = (rgb& 65280) >> 8;
+	intb = (rgb& 255);
+	intdecimalRGB=r+g+b;.</p>
+
+	<img src="img/drawing panel/algorithm_pic1.jpg">
+	<p style="font-size:16px;font-weight:normal;">And in Class CompareArray, if two pixels at the same location of two pictures are white, ignore;if one of the two pixels at same location is white, then they are different;if neither of them are white, then compute the difference of their R,G,B values. Compute the average difference.</p>
+
+    <div class="return"><a href="home.html#projects">HAVE A LOOK AT OTHER PROJECTS >></a></div>
+
+
+</div>
+
+
+</body>
+</html>
