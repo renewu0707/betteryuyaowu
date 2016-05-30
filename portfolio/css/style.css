@@ -26,7 +26,7 @@
 .navbar li a, .navbar .navbar-brand {
     color: grey !important;
     font-size:bold;
-    font-family:'BebasNeueRegular';
+    font-family:'BebasNeueRegular', Tahoma, Segoe UI, Serif;
     font-size:16px;
 }
 
@@ -133,7 +133,7 @@
 }
 #landing_section h3{
 	margin-top:3%;
-	font-family:'BebasNeueRegular';
+	font-family:'BebasNeueRegular',Tahoma, Segoe UI, Serif;
 	/*font-weight:bold;*/
 	font-size:32px;
 }
@@ -224,15 +224,23 @@
     padding: 0 0 15px 0;
     border: none;
     border-radius: 0;
+    /*height:300px;*/
 }
 .thumbnail img {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     margin-bottom: 10px;
 }
 
 .thumbnail:hover{
 	color:#3c4f3c;
+}
+.thumbnail_title{
+	color:black;
+	font-weight:bold;
+}
+.thumbnail p:nth-child(2){
+	height:30px;
 }
 #projects{
 	width:100%;
@@ -257,7 +265,7 @@
 {
 	text-align:center;
 	color:#666666;
-	font-family:Tahoma;
+	font-family:Tahoma,Segoe UI, Serif;
 	font-size:32px;
 	font-weight:bold;
 	margin:0px;
@@ -266,7 +274,7 @@
 .project_intro_android p
 {
 	color:#666666;
-	font-family:Segoe UI;
+	font-family:Segoe UI, Serif;
 	font-size:16px;
 	padding:5% 5%;
 }
@@ -278,7 +286,7 @@
 {
 	text-align:center;
 	color:#666666;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	font-size:32px;
 	font-weight:bold;
 	padding-top:5%;	
@@ -286,7 +294,7 @@
 .project_mywork_android p
 {
 	color:#666666;
-	font-family:Segoe UI;
+	font-family:Segoe UI,Serif;
 	font-size:16px;
 	padding:2% 5%;
 	/*text-align:center;*/
@@ -298,7 +306,7 @@
 {
 	text-align:center;
 	color:#8ab21d;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	font-size:18px;
 	font-weight:normal;
 	border-top:2px solid #8ab21d;
@@ -314,7 +322,7 @@
 .r1 h1
 {
 	color:#8ab21d;
-	font-family:Tahoma;
+	font-family:Tahoma,Segoe UI, Serif;
 	font-size:24px;
 	font-weight:normal;
 	padding-top:5%;
@@ -326,7 +334,7 @@
 .r1 p
 {
 	color:#666666;
-	font-family:Segoe UI;
+	font-family:Segoe UI, Serif;
 	font-size:16px;
 }
 .r1 img
@@ -336,14 +344,14 @@
 }
 .r2 h1{
 	color:#8ab21d;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	font-size:24px;
 	font-weight:normal;
 	padding:2% 5%;
 }
 .r2 p{
 	color:#666666;
-	font-family:Segoe UI;
+	font-family:Segoe UI, Serif;
 	font-size:16px;
 	padding:0 5%;
 }
@@ -359,14 +367,14 @@
 }
 .r3 h1{
 	color:#8ab21d;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	font-size:24px;
 	font-weight:normal;
 	padding:2% 5%;
 }
 .r3 p{
 	color:#666666;
-	font-family:Segoe UI;
+	font-family:Segoe UI, Serif;
 	font-size:16px;
 	padding:0 5%;
 }
@@ -476,7 +484,7 @@
 {
 	text-align:center;
 	color:#666666;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	font-size:32px;
 	font-weight:bold;
 	padding:5%;
@@ -485,7 +493,7 @@
 #project_intro_pop p
 {
 	color:#666666;
-	font-family:Segoe UI;
+	font-family:Segoe UI, Serif;
 	font-size:16px;
 	padding:5%;
 }
@@ -507,7 +515,7 @@
 {
 	text-align:center;
 	color:#666666;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	font-size:32px;
 	font-weight:bold;
 	padding:5%;	
@@ -516,7 +524,7 @@
 #project_core_pop p
 {
 	color:#666666;
-	font-family:Segoe UI;
+	font-family:Segoe UI, Serif;
 	font-size:16px;
 }
 
@@ -524,7 +532,7 @@
 {
 	text-align:left;
 	color:#5188e9;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	font-size:18px;
 	font-weight:normal;
 	padding-bottom:2%;
@@ -536,7 +544,7 @@
 #detail h1
 {
 	color:#5188e9;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	font-size:32px;
 	font-weight:bold;
 	padding-left:2%;
@@ -548,7 +556,7 @@
 #detail p
 {
 	color:#666666;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	font-size:16px;
 	padding:5%;
 	padding-bottom:0;
@@ -560,7 +568,7 @@
 
 #detail2 h1{
 	color:#5188e9;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	font-size:32px;
 	font-weight:bold;
 	padding-left:2%;
@@ -571,7 +579,7 @@
 #detail2 p{
 	padding:5%;
 	font-size:16px;
-	font-family:Tahoma;
+	font-family:Tahoma,Segoe UI, Serif;
 }
 #detail2 img{
 	width:100%;
@@ -582,7 +590,7 @@
 
 #detail3 h1{
 	color:#5188e9;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	font-size:32px;
 	font-weight:bold;
 	padding-left:2%;
@@ -594,7 +602,7 @@
 #detail3 p{
     padding:5%;
 	font-size:16px;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	padding-bottom:0;
 }
 
@@ -606,7 +614,7 @@
 }
 #detail3 a{
 	color:#5188e9;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	font-size:16px;
 	padding-bottom:0;
 	text-decoration: none;	
@@ -623,7 +631,7 @@
 {
 	text-align:center;
 	color:#666666;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	font-size:32px;
 	font-weight:bold;
 	padding-top:5%;
@@ -631,7 +639,7 @@
 .project_intro p
 {
 	color:#666666;
-	font-family:Segoe UI;
+	font-family:Segoe UI, Serif;
 	font-size:16px;
 	padding:5% 5%;
 }
@@ -643,7 +651,7 @@
 {
 	text-align:center;
 	color:#666666;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	font-size:32px;
 	font-weight:bold;
 	padding:5%;
@@ -654,7 +662,7 @@
 .project_mywork p
 {
 	color:#666666;
-	font-family:Segoe UI;
+	font-family:Segoe UI, Serif;
 	font-size:16px;
 }
 .project_mywork img
@@ -669,14 +677,14 @@
 {
 	text-align:center;
 	color:#666666;
-	font-family:Tahoma;
+	font-family:Tahoma,Segoe UI, Serif;
 	font-size:32px;
 	font-weight:bold;
 }
 .project_demo p
 {
 	color:#666666;
-	font-family:Tahoma;
+	font-family:Tahoma, Segoe UI, Serif;
 	font-size:20px;
 	text-align: center;
 	font-weight:bold;
@@ -690,7 +698,7 @@
 .notes{
 	padding-left:5%;
 	padding-right:5%;
-	font-family:Segoe UI;
+	font-family:Segoe UI, Serif;
 	font-size:16px;
 }
 .return{
@@ -717,7 +725,7 @@
 .user_study_cva_intro p{
 	padding:5% 5%;
 	font-size:16px;
-	font-family:Tahoma;
+	font-family:Tahoma,Segoe UI, Serif;
 }
 .user_study_cva_method{
 	/*background-color: #faca06;*/
@@ -725,7 +733,7 @@
 .user_study_cva_method p{
 	padding:0 5%;
 	font-size:16px;
-	font-family:Tahoma;
+	font-family:Tahoma,Segoe UI, Serif;
 }
 .user_study_cva_method h2{
 	padding:5% 5%;
@@ -734,7 +742,7 @@
 .user_study_cva_results p{
 	padding:0 5%;
 	font-size:16px;
-	font-family:Tahoma;
+	font-family:Tahoma,Segoe UI, Serif;
 }
 .user_study_cva_results h2{
 	padding:5% 5%;
@@ -743,7 +751,7 @@
 .user_study_cva_future_work p{
 	padding:0 5%;
 	font-size:16px;
-	font-family:Tahoma;
+	font-family:Tahoma,Segoe UI, Serif;
 }
 .user_study_cva_future_work h2{
 	padding:5% 5%;
