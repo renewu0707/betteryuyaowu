@@ -10,6 +10,15 @@
 <!-- css file for media query -->
 <link href="css/structure.css" rel="stylesheet" type="text/css">
 
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Chart.bundle.js"></script>
+
 </head>
 <!-- nav bar changes when scrolling -->
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -38,7 +47,7 @@
 
 <section class="container-fluid text-center" id="landing_section" >
    <!--  <img class="img-circle img-responsive" style="display:inline" id="my_photo" src="img/my_photo.jpg" alt="I" width="300" height="300"> -->
-   <img style="display:inline" id="my_photo" src="img/my_photo.png" alt="I" width="300" height="300">
+   <img style="display:inline" id="my_photo" src="img/my_photo.png" alt="I">
     <h3>AM</h3>
     <h4>User Experience Designer<span> ♠ </span>Developer<span> ♠ </span>Data Visualization Specialist</h4>   
 </section>
@@ -58,9 +67,10 @@
           <!-- <img id="work_icon" src="img/work.png"> -->
           <span class="glyphicon glyphicon-briefcase logo-small slideanim"></span>
           <h4>Work Experience</h4>
+          <p>Microsoft (China) Co.Ltd.</br><span style="color:#d96345;font-weight:bold;">Technical Consultant</span></br><span style="font-size:14px;color:grey;">June 2013 - Sept 2014</span></br>Deliver customized platforms based on users' needs</p>
           <p>Simon Fraser University</br><span style="color:#d96345;font-weight:bold;">Research Assistant</span></br><span style="font-size:14px;color:grey;">Sept 2015 - Now</span></br>Focus on HCI, data visualization, visual analytics</p>
           <p>New Oriental Edu & Tech Group</br><span style="color:#d96345;font-weight:bold;">Interaction Designer</span></br><span style="font-size:14px;color:grey;">Dec 2014 - June 2015</span></br>Conduct user experience research, prototyping</p>
-          <p>Microsoft (China) Co.Ltd.</br><span style="color:#d96345;font-weight:bold;">Technical Consultant</span></br><span style="font-size:14px;color:grey;">June 2013 - Sept 2014</span></br>Deliver customized platforms based on users' needs</p>
+          
         </div>
         <div class="col-sm-4">
           <!-- <img id="skills_icon" src="img/skills.png"> -->
@@ -71,90 +81,126 @@
         </div>
     </div>
 
-    <div class="grid-row" id="project_button_row">
+    <div class="row" id="project_button_row">
       <div id="project_button_label">Can't wait to introduce those interesting <span style="color:#d96345;font-weight:bold;">PROJECTS</span> I did.</div>
       <a href="#projects"><div id="project_button">Let's go !</div></a>
     </div>
+</section>
+
+<section id="skills" class="row">
+<div class="canvas-holder col-sm-12 col-md-6">
+  <canvas id="skill_chart_area" />
+</div>
+<div class="canvas-holder col-sm-12 col-md-6">
+  <canvas id="software_chart_area" />
+</div>
 </section>
 
 <section id="projects" class="container-fluid text-center">
   <h3>What did I ACHIEVE?</h3>
   <div class="row text-center">
     <div class="col-sm-6 col-md-3">
-    <a href="dynamic_dashboard.html">
       <div class="thumbnail">
-        <img src="img/dynamic_dashboard.jpg" alt="Dynamic Dashboard">
-        <p class="thumbnail_title">Dynamic Dashboard</p>
-        <p>Development of a Tableau-like data visual analytics tool with charts recommendation algorithm based on dimensions.</p> 
-      </div>
-    </a>
-
-    </div>
-    <div class="col-sm-6 col-md-3">
-    <a href="user_study_cva.html">
-      <div class="thumbnail">
-        <img src="img/user_study_cva_cover.jpg" alt="Collaborative Visual Analytics">
-        <p class="thumbnail_title">User Experience Research in CVA</p>
-        <p>Qualitative analysis of needs for CVA systems through semi-structured interviews with data analysts.</p>
-      </div>
-    </a>
-    </div>
-    <div class="col-sm-6 col-md-3">
-    <a href="restaurant_data.html">
-      <div class="thumbnail">
-        <img src="img/restaurant_data.jpg" alt="Restaurant Data Dashboard">
-        <p class="thumbnail_title">"Know Your Revenue"</p>
-        <p>Development of an interactive dashboard with completely linked charts for real business data analysis of a chain restaurant.</p>
-      </div>
-    </a>
-    </div>
-      <div class="col-sm-6 col-md-3">
-      <a href="pop.html">
-        <div class="thumbnail">
-          <img src="img/pop.png" alt="POP Mobile Education App">
-          <p class="thumbnail_title">"POP Mobile" Education App</p>
-          <p>Prototyping of a family-school connection mobile app supporting convenient sharing and communications between teachers and parents.</p>
-        </div>
+        <a href="dynamic_dashboard.html">  
+          <img src="img/dynamic_dashboard.jpg" alt="Dynamic Dashboard">
+          <div class="caption">
+            <p class="caption_title">Dynamic Dashboard</p>
+            <p class="caption_intro">Development of a Tableau-like data visual analytics tool with charts recommendation algorithm based on dimensions.</p> 
+          </div> 
         </a>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">   
+      <div class="thumbnail">
+       <a href="user_study_cva.html">
+        <img src="img/user_study_cva_cover.jpg" alt="Collaborative Visual Analytics">
+        <div class="caption">
+          <p class="caption_title">User Experience Research in CVA</p>
+          <p class="caption_intro">Qualitative analysis of needs for CVA systems through semi-structured interviews with data analysts.</p>  
+        </div>
+       </a>
+      </div>   
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <a href="restaurant_data.html">
+          <img src="img/restaurant_data.jpg" alt="Restaurant Data Dashboard">
+          <div class="caption">
+          <p class="caption_title">"Know Your Revenue"</p>
+          <p class="caption_intro">Development of an interactive dashboard with completely linked charts for real business data analysis of a chain restaurant.</p>
+          </div>
+        </a> 
+      </div>      
+    </div>
+      
+    <div class="col-sm-6 col-md-3"> 
+      <div class="thumbnail">
+        <a href="pop.html">
+          <img src="img/pop.png" alt="POP Mobile Education App">
+          <div class="caption">
+          <p class="caption_title">"POP Mobile"</p>
+          <p class="caption_intro">Prototyped a family-school connection mobile app supporting convenient sharing and communications.</p>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
   
   <div class="row text-center">
     <div class="col-sm-6 col-md-3">
-    <a href="lenovo_cowork.html">
+    
       <div class="thumbnail">
-        <img src="img/work_together.jpg" alt="Lenovo Co-work Platfrom">
-        <p class="thumbnail_title">Lenovo Cowork Platfrom</p>
-        <p>Prototyping of an OA platform for document management, task assignment, sharing and communications on top of Microsoft SharePoint.</p>
+        <a href="lenovo_cowork.html">
+          <img src="img/work_together.jpg" alt="Lenovo Co-work Platfrom">
+          <div class="caption">
+          <p class="caption_title">Lenovo Cowork Platfrom</p>
+          <p class="caption_intro">Prototyping of an OA platform for document management, task assignment, sharing and communications on top of Microsoft SharePoint.</p>
+          </div>
+        </a>
       </div>
-      </a>
+      
     </div>
+    
     <div class="col-sm-6 col-md-3">
-    <a href="lenovo_cloud.html">
+    
       <div class="thumbnail">
-        <img src="img/cloud_service.jpg" alt="Lenovo Cloud Service">
-        <p class="thumbnail_title">Lenovo Cloud Service Portal</p>
-        <p>Prototyping of a portal for cloud service provider supporting virtual machines rental and tenants management service on top of Microsoft Azure.</p>
+        <a href="lenovo_cloud.html">
+          <img src="img/cloud_service.jpg" alt="Lenovo Cloud Service">
+          <div class="caption">
+          <p class="caption_title">Lenovo Cloud Service Portal</p>
+          <p class="caption_intro">Prototyping of a portal for cloud service provider supporting virtual machines rental and tenants management service on top of Microsoft Azure.</p>
+          </div>
+        </a>
       </div>
-      </a>
     </div>
+    
     <div class="col-sm-6 col-md-3">
-    <a href="panel.html">
+    
       <div class="thumbnail">
-        <img src="img/drawing_panel.png" alt="Electrical Drawing Panel">
-        <p class="thumbnail_title">"How Well I Draw ?"</p>
-        <p>Development of a eletronic drawing game for kids to imitate a cartoon picture and get a score based on their performance.</p>
+        <a href="panel.html">
+          <img src="img/drawing_panel.png" alt="Electrical Drawing Panel">
+          <div class="caption">
+          <p class="caption_title">"How Well I Draw ?"</p>
+          <p class="caption_intro">Development of a eletronic drawing game for kids to imitate a cartoon picture and get a score based on their performance.</p>
+          </div>
+        </a>
       </div>
-      </a>
+      
     </div>
-      <div class="col-sm-6 col-md-3">
-      <a href="android.html">
+      
+    <div class="col-sm-6 col-md-3">
+      
       <div class="thumbnail">
-        <img src="img/android.jpg" alt="Android App Study">
-        <p class="thumbnail_title">Energy Inefficiency in Android Apps</p>
-        <p>Investigation into hundreds of Android apps to analyze energy inefficient issues - existence, severity, and causes.</p>
+        <a href="android.html">
+          <img src="img/android.jpg" alt="Android App Study">
+          <div class="caption">
+          <p class="caption_title">Energy Inefficiency in Android Apps</p>
+          <p class="caption_intro">Investigation into hundreds of Android apps to analyze energy inefficient issues - existence, severity, and causes.</p>
+          </div>
+        </a>
       </div>
-      </a>
     </div>
   </div>
 </section>
@@ -197,14 +243,10 @@
 </section>
  
 
- <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
 <script>
-    $(document).ready(function(){
+
+$(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
@@ -224,6 +266,7 @@
     window.location.hash = hash;
     });
   });
+
 })
 
 // jquery for slide in elements
@@ -237,6 +280,67 @@ $(window).scroll(function() {
     }
   });
 });
+
+// doughnut chart
+var config = {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    3,
+                    2,
+                    1,
+                    0.5,
+                    0.5,
+                    1
+                ],
+                backgroundColor: [
+                    "#F7464A",
+                    "#46BFBD",
+                    "#FDB45C",
+                    "#949FB1",
+                    "#4D5360",
+                    "#0000FF"
+                ],
+                label: 'Skills'  
+            }],
+            labels: [
+                "HTML5/CSS3",
+                "JavaScript",
+                "Bootstrap",
+                "Python",
+                "Java",
+                "SQL"
+            ]
+        },
+        options: {
+            responsive: true,
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Skill Distribution'
+            },
+            animation: {
+                animateScale: true,
+                animateRotate: true
+            },
+            tooltips: {
+              label: ["3 years", "2 years","1 year","half of year","half of year1","1 year",]
+
+              }
+
+            }
+        };
+  
+
+    window.onload = function() {
+        var ctx = document.getElementById("skill_chart_area").getContext("2d");
+        window.myDoughnut = new Chart(ctx, config);
+        var ctx2 = document.getElementById("software_chart_area").getContext("2d");
+        window.myDoughnut2 = new Chart(ctx2, config);
+    };
 </script>
 
 </body>

@@ -102,27 +102,6 @@
 	width:60vw;
 }
 
-/*#start_to_know_me{
-	width:20%;
-	text-align:center;
-	color:white;
-	font-size:16px;
-	background-color: black;	
-	padding:10px;
-	position:absolute;
-	top:85%;
-	left:40%;
-	z-index:3;
-}
-#start_to_know_me:hover{
-    -moz-transition: all 0.4s ease-in; 
-    -webkit-transition: all 0.4s ease-in; 
-    -o-transition: all 0.4s ease-in;
-	background-color: white;
-	border:solid 1px black;
-	color:black;
-}*/
-
 /*home page style*/
 #landing_section{
 	padding:0;
@@ -130,11 +109,11 @@
 }
 #my_photo{
 	margin-top:12%;
+	width:300px;
 }
 #landing_section h3{
 	margin-top:3%;
 	font-family:'BebasNeueRegular',Tahoma, Segoe UI, Serif;
-	/*font-weight:bold;*/
 	font-size:32px;
 }
 
@@ -214,34 +193,15 @@
 	width:10%;
 	height:auto;
 }
-
+#canvas-holder{
+	/*width:75%;*/
+}
+canvas {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
 /*projects section style*/
-#projects a{
-	text-decoration: none;
-	color:grey;
-}
-.thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-    /*height:300px;*/
-}
-.thumbnail img {
-    width: 100%;
-    /*height: 100%;*/
-    margin-bottom: 10px;
-}
-
-.thumbnail:hover{
-	color:#3c4f3c;
-}
-.thumbnail_title{
-	color:black;
-	font-weight:bold;
-}
-.thumbnail p:nth-child(2){
-	height:30px;
-}
 #projects{
 	width:100%;
 	overflow:hidden;
@@ -252,6 +212,43 @@
 #projects h3{
 	margin:50px 0 50px 0;
 }
+.thumbnail {
+    padding:0;
+    border: none;
+    border-radius: 0;
+    /*height:300px;*/
+    min-height:300px;
+}
+.thumbnail:hover{
+	-webkit-transform: scale(1.05);
+	 -moz-transform: scale(1.05);
+	 -o-transform: scale(1.05);
+	  -ms-transform: scale(1.05);
+	  transform: scale(1.05);
+}
+.thumbnail img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.thumbnail a{
+	text-decoration: none;
+}
+.caption_title{
+	color:black;
+	font-weight:bold;
+}
+.caption_intro{
+	font-size:12px;
+	/*height:60px;*/
+}
+.caption_button:hover{
+	text-decoration: none;
+	color:grey;
+}
+.caption_button p{
+	margin:0;
+}
+
 
 /*Android project page style*/
 .project_header img{
