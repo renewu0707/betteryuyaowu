@@ -282,65 +282,65 @@ $(window).scroll(function() {
 });
 
 // doughnut chart
-var config = {
-        type: 'doughnut',
-        data: {
-            datasets: [{
-                data: [
-                    3,
-                    2,
-                    1,
-                    0.5,
-                    0.5,
-                    1
-                ],
-                backgroundColor: [
-                    "#F7464A",
-                    "#46BFBD",
-                    "#FDB45C",
-                    "#949FB1",
-                    "#4D5360",
-                    "#0000FF"
-                ],
-                label: 'Skills'  
-            }],
-            labels: [
-                "HTML5/CSS3",
-                "JavaScript",
-                "Bootstrap",
-                "Python",
-                "Java",
-                "SQL"
-            ]
-        },
-        options: {
-            responsive: true,
-            legend: {
-                position: 'top',
-            },
-            title: {
-                display: true,
-                text: 'Skill Distribution'
-            },
-            animation: {
-                animateScale: true,
-                animateRotate: true
-            },
-            tooltips: {
-              label: ["3 years", "2 years","1 year","half of year","half of year1","1 year",]
+// var config = {
+//         type: 'doughnut',
+//         data: {
+//             datasets: [{
+//                 data: [
+//                     3,
+//                     2,
+//                     1,
+//                     0.5,
+//                     0.5,
+//                     1
+//                 ],
+//                 backgroundColor: [
+//                     "#F7464A",
+//                     "#46BFBD",
+//                     "#FDB45C",
+//                     "#949FB1",
+//                     "#4D5360",
+//                     "#0000FF"
+//                 ],
+//                 label: 'Skills'  
+//             }],
+//             labels: [
+//                 "HTML5/CSS3",
+//                 "JavaScript",
+//                 "Bootstrap",
+//                 "Python",
+//                 "Java",
+//                 "SQL"
+//             ]
+//         },
+//         options: {
+//             responsive: true,
+//             legend: {
+//                 position: 'top',
+//             },
+//             title: {
+//                 display: true,
+//                 text: 'Skill Distribution'
+//             },
+//             animation: {
+//                 animateScale: true,
+//                 animateRotate: true
+//             },
+//             tooltips: {
+//               label: ["3 years", "2 years","1 year","half of year","half of year1","1 year",]
 
-              }
+//               }
 
-            }
-        };
+//             }
+//         };
   
 
-    window.onload = function() {
-        var ctx = document.getElementById("skill_chart_area").getContext("2d");
-        window.myDoughnut = new Chart(ctx, config);
-        var ctx2 = document.getElementById("software_chart_area").getContext("2d");
-        window.myDoughnut2 = new Chart(ctx2, config);
-    };
+//     window.onload = function() {
+//         var ctx = document.getElementById("skill_chart_area").getContext("2d");
+//         window.myDoughnut = new Chart(ctx, config);
+//         var ctx2 = document.getElementById("software_chart_area").getContext("2d");
+//         window.myDoughnut2 = new Chart(ctx2, config);
+//     };
 </script>
 
 </body>

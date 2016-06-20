@@ -14,87 +14,67 @@
 
 <body leftmargin=0 topmargin=0  oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'>
 	<div class="row project_header">
-		<img src="img/lenovo cloud/cloud_header_pic.jpg">
+		<!-- <img src="img/lenovo cloud/cloud_header_pic.jpg"> -->
+		<img src="img/lenovo cloud/cosn.png">
 	</div>
-	<div class="project_intro">
+	<div class="row" id="project_intro_cson">
 		<h1>INTRODUCTION</h1>
-		<p>Lenovo Cloud OS Network, we use COSN as the name of this project, is a IaaS public cloud service portal constructed on Lenovo existed hardware environment, including functions of Tenant Application and Log-in, VMs Service Application and Modification, VMs Management, etc. (VM is short for Virtual Machine.). The portal we build for Lenovo will help him to become a cloud service provide, and offer enterprise tenants overall basic VM service.
-		</br></br>
-		The portal has three sub-portals according to different roles: Cloud Computing Portal for Tenant Admin, Self-service Portal for Tenant Admin & Tenant Users, and Cloud Service Management Portal for Service Provider.</p>
-    <div class="return"><a href="home.html#projects">NOT INTERESTED? HAVE A LOOK AT OTHER PROJECTS >></a></div>
+		<div class="col-sm-6">
+			<p>COSN was short for Cloud OS Network, which was a IaaS public cloud service portal built on top of Microsoft Windows Azure Pack, to allow our customer offering VMs(Virtual Machine) hosting and leasing service to their tenants as a service provider. The portal had three sub-portals when sign-in as different roles - Cloud Computing Portal for Tenant Admin to apply for VMs, modify service plans, etc, Self-service Portal for Tenant Admin & Tenant Users to manage their VMs, and Cloud Service Management Portal for Service Provider. The infrastrusture of the system is shown in the right figure.</p>
+	        <div class="return">
+	          <a href="home.html#projects">NOT INTERESTED? HAVE A LOOK AT OTHER PROJECTS >></a>
+	        </div>
+        </div>
 
-	</div>
-	<div class="project_mywork">
+		<div id="project_intro_cosn_img" class="col-sm-6">
+		    <img src="img/lenovo cloud/azure_pack.jpg">
+		</div>
+
+   </div>
+
+	<div id="project_mywork_cosn">
 	
-	<h1>WHAT'S MY ROLE?</h1>
-	<div class="row">
-		<div class="col-sm-4 mywork">
-			<p>I assisted in analyzing our customer business needs, design the logical structure of the portal, and wrote Requirments Specification.</br></br>The figure on the right is the logical funtion structure.</p>
+		<h1>WHAT'S MY ROLE?</h1>
+		<div class="row mywork_cosn">
+			<div class="col-sm-4">
+				<p class="mywork_cosn_title">Project Manager</p>
+				<p class="mywork_cosn_content">I assisted in analyzing our customer business needs and making project plans. I delivered Requirments Specification to our customer, and summarized ideas of the logical structure of the portal with a visualized relation chart (shown in the right), which was proved to be useful in the following developement and communications.</p>
+			</div>
+			<div class="col-sm-8"><img src="img/lenovo cloud/mywork_pic5.jpg"></div>
 		</div>
-		<div class="col-sm-8 mywork"><img src="img/lenovo cloud/mywork_pic1.jpg"></div>
-	</div>
 
-	<div class="row">
-		<div class="col-sm-8 mywork"><img src="img/lenovo cloud/mywork_pic2.jpg"></div>
-		<div class="col-sm-4 mywork">
-			<p>I also designed the business process in each sub-portal and the connections between them.</br>
-			</br>Please refer to the figures on the left.</br></br>
-			1 The main process (from top to bottom):</br>
-			Cloud Computing sub-portal</br>
-			Self-service sub-portal</br>
-			Cloud Service Management sub-portal</br></p>
+		<div class="row mywork_cosn">
+			<div class="col-sm-8"><img src="img/lenovo cloud/mywork_pic2.jpg"></div>
+			<div class="col-sm-4">
+			    <p class="mywork_cosn_title">User Experience Designer</p>
+				<p class="mywork_cosn_content">I designed the whole operation process and interactions of the portal, and the connections between 3 sub-portals using Microsoft Visio (shown in the left). </br></br>I pointed to one design consideration example in the figure, the reason for this is because the portal is facing enterprise users, to the contrast of retailing to individual users, they are more cautious and thoughtful. Once decisons are made, it will be at least one year contract of plan. Offering them more information they want to facilitate decison making process is more important than increasing registered user number.</p>
+				
+			</div>
 		</div>
-	</div>
 
-    <div class="row">
-		<div class="col-sm-8 mywork"><img src="img/lenovo cloud/mywork_pic3.jpg"></div>
-		<div class="col-sm-4 mywork">
-		    <p>2 Service Apply/Alter Process</p>
+		<div class="row mywork_cosn">
+		    <p class="mywork_cosn_title">Front End Developer</p>
+			<p>I assisted in web development of the main portal when resources are limited using HTML/CSS, and Javascript. You will see some sample pages in the following demo section.</p>
 		</div>
-	</div>
 
-	 <div class="row">
-		<div class="col-sm-8 mywork"><img src="img/lenovo cloud/mywork_pic4.jpg"></div>
-		<div class="col-sm-4 mywork">
-		    <p>3 Service Expiration Process</p>
-		</div>
-	</div>
+ 
+  </div>
 
-    <div class="row">		
-		<div class="col-sm-4 mywork">
-		    <p>All the VM service is specified in the service plans, and tenant actually order the service plans. The plan defines the number of VMs, template of VMs(windows servers or SQL servers), number of CPU cores, RAM, Virtual Network, etc. Shown as the figure in the right.</p>
-		</div>
-		<div class="col-sm-8 mywork"><img src="img/lenovo cloud/mywork_pic5.jpg"></div>
-	</div>
+  <div class="row" id="project_demo_cosn">
+	<h1>Design Demo</h1>
+	<p>Design of VM service application button on Cloud Computing Sub-portal Homepage</p>
+	<img src="img/lenovo cloud/cosn_demo_1.png">
+    
+    <p>Design of combined tenant sign-up & log-in page after user deciding on VM service plans</p>
+	<img src="img/lenovo cloud/cosn_demo_2.png" >
 	
-    <div class="row">
-		    <p>Besides the above work, I also build the prototype of the whole portal as a referrence for developers and UI designer, and since there are too many pictures in the prototype and the limited illustration space in the website, you can downloaded it <a href="" style="text-decoration:none;"> here </a>if you are interested.</p>
-	</div>
 
   </div>
 
-  <div class="row project_demo">
-	<h1>Demo</h1>
-	<p>Cloud Computing Sub-portal Homepage</p>
-	<img src="img/lenovo cloud/demo_pic1.jpg">
-    
-    <p>Tenant Application & Log-in</p>
-	<img src="img/lenovo cloud/demo_pic2.jpg" >
-	
-	<p>Virtual Machines Applicaion</p>
-	<img src="img/lenovo cloud/demo_pic3.jpg">
-    
-    <p>Tenant Self-service Sub-portal Homepage</p>
-	<img src="img/lenovo cloud/demo_pic4.jpg">
-
-	<p>Cloud Service Management Sub-portal Homepage</p>
-	<img src="img/lenovo cloud/demo_pic5.jpg">
-
+  <div class="row" id="project_footer_cosn">
+	  <p class="notes"><span style="font-weight:bold;">NOTES:  </span>First, I am very sorry some figures are in Chinese, because the portals are used for Chinese customers, I didn't make an English version. And secondly, since the portal is an internal project, it cannot be applied as any commercial use. Thanks for your understanding.</p>	
+	  <div class="return"><a href="home.html#projects">HAVE A LOOK AT OTHER PROJECTS >></a></div>
   </div>
-
-  <p class="notes"><span style="font-weight:bold;">NOTES:</span>First, I am very sorry some figures are in Chinese, because the portals are used for Chinese customers, I didn't make an English version. And secondly, since the portal is an internal project, it cannot be applied as any commercial use. Thanks for your understanding.</p>	
-
-  <div class="return"><a href="home.html#projects">HAVE A LOOK AT OTHER PROJECTS >></a></div>
 
 </body>
 </html>

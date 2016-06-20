@@ -621,6 +621,112 @@ canvas {
 }
 
 /*lenovo cowork project/cloud service/drawing panel page style*/
+#project_intro_cson{
+	background-color:#106ac4;
+	padding:5% 2%;
+}
+#project_intro_cson h1{
+	text-align:center;
+	font-family:Tahoma, Segoe UI, Serif;
+	font-size:32px;
+	font-weight:bold;
+	padding-bottom:5%;
+	margin:0;
+	color:white;
+}
+#project_intro_cson p{
+	font-family:Segoe UI, Serif;
+	font-size:16px;
+	padding-bottom:5%;
+	margin:0;
+	color:white;
+}
+#project_intro_cson a{
+	color:#f06424;
+}
+#project_intro_cosn_img{
+	text-align:center;
+	/*padding-bottom:2%;*/
+}
+#project_intro_cosn_img img{
+	width:100%;
+}
+#project_mywork_cosn{
+	padding:5% 2%;
+}
+
+#project_mywork_cosn h1{
+    text-align:center;
+	color:#666666;
+	font-family:Tahoma, Segoe UI, Serif;
+	font-size:32px;
+	font-weight:bold;
+	/*padding-bottom:5%;*/
+	margin:0;
+}
+#project_mywork_cosn img{
+	width:100%;
+}
+#project_mywork_cosn p{
+	/*font-family:Segoe UI, Serif;
+	font-size:16px;*/
+	padding-bottom:2%;
+	margin:0;
+	color:#666666;
+}
+.mywork_cosn{
+	padding-top:5%;
+}
+.mywork_cosn_title{
+	font-size:24px;
+	font-weight:bold;
+	font-family:Tahoma,Segoe UI, Serif;
+}
+.mywork_cosn_content{
+	font-family:Segoe UI, Serif;
+	font-size:16px;
+}
+
+#project_demo_cosn{
+	background-color: #106ac4;
+	padding:5% 2%;
+}
+#project_demo_cosn h1{
+    text-align:center;
+	color:white;
+	font-family:Tahoma, Segoe UI, Serif;
+	font-size:32px;
+	font-weight:bold;
+	padding-bottom:5%;
+	margin:0;
+}
+#project_demo_cosn p{
+	text-align: center;
+	color:white;
+	font-size:16px;
+	/*font-weight:bold;*/
+	font-family:Segoe UI, Serif;
+	padding-bottom:2%;
+}
+#project_demo_cosn img{
+	width:100%;
+	text-align:center;
+	padding-bottom:2%;
+}
+#project_footer_cosn{
+	background-color: #106ac4;
+	padding:0 2% 5% 2%;
+}
+#project_footer_cosn p{
+	color:white;
+}
+#project_footer_cosn a{
+	color:#f06424;
+}
+
+
+
+
 .project_header img{
 	width:100%;
 }
@@ -632,6 +738,7 @@ canvas {
 	font-size:32px;
 	font-weight:bold;
 	padding-top:5%;
+	margin:0;
 }
 .project_intro p
 {
@@ -639,10 +746,12 @@ canvas {
 	font-family:Segoe UI, Serif;
 	font-size:16px;
 	padding:5% 5%;
+	margin:0;
 }
 .project_mywork
 {
 	background-color:#f5f3ed;
+	margin:0;
 }
 .project_mywork h1
 {
@@ -652,6 +761,7 @@ canvas {
 	font-size:32px;
 	font-weight:bold;
 	padding:5%;
+	margin:0;
 }
 .mywork_pic{
 	padding:5%;
@@ -693,19 +803,19 @@ canvas {
 	width:100%;
 }
 .notes{
-	padding-left:5%;
-	padding-right:5%;
+	/*padding-left:5%;
+	padding-right:5%;*/
 	font-family:Segoe UI, Serif;
 	font-size:16px;
 }
-.return{
-	padding-left:5%;
-	padding-bottom:5%;
-}
+
 .return a{
 	text-decoration: none;
 	font-size:16px;
 	color:#e22a51;
+}
+.return a:hover{
+	text-decoration: underline;
 }
 
 /*user study cva page style*/
