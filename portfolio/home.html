@@ -218,33 +218,103 @@
         <img src="img/codepen.png">
        </div>   
     </div>
+    
     <div class="col-sm-7">
-      <div class="row">
-        <div class="col-sm-12" id="feedback_form_label">FEEDBACK</div>
-      <div class="row">
-        <div class="col-sm-6 form-group" id="name_input">
-          <input class="form-control"  name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group" id="email_input">
-          <input class="form-control"  name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments_input" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group" id="submit_button">
-          <button class="btn btn-default pull-left" type="submit">Submit</button>
-        </div>
-      </div> 
-    </div>
+      <!-- <div class="row"> -->
+      <div id="feedback_form_label">FEEDBACK</div>
+      <form action="insert.php" method="post" id="feedback_form">
+        <!-- <div class="col-sm-6 form-group"> -->
+          <input class="form-control"  id="name" name="name" placeholder="Name" type="text" required>
+        <!-- </div> -->
+        <!-- <div class="col-sm-6 form-group"> -->
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        <!-- </div> -->
+      <!-- </div> -->
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <!-- <div class="row"> -->
+        <!-- <div class="col-sm-12 form-group" > -->
+          <button class="btn btn-default pull-left" type="submit" id="submit">Submit</button>
+        <!-- </div> -->
+     <!--  </div> --> 
+      </form>
     </div>
     <div class="row">
-      <div class="col-sm-12" id="copyright">Copyright ©2016 Rene Yuyao WU</div>
+      <div class="col-sm-12" id="copyright">Copyright ©2016 Yuyao WU (Rene)</div>
   </div>
 </section>
  
 
+<!-- pop out window for feedback submission notification -->
+<!-- modal for successful submission -->
+  <div class="modal fade" id="modal_success" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Message from Rene</h4>
+        </div>
+        <div class="modal-body">
+          <p>Your feedback has been sent successfully. Thank you so much. Your suggestions mean a lot to me. Have a nice day!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!-- modal for unsucessful submission -->
+  <div class="modal fade" id="modal_fail" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Message from Rene</h4>
+        </div>
+        <div class="modal-body">
+          <p>Sorry, for some reasons, your feedback failed to be sent. Please send me an email or call me instead. Thank you so much.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
 
 <script>
+
+$(document).ready(function(){
+
+    $("#feedback_form").submit( function() {
+
+        $.ajax({
+            url     : $(this).attr('action'),
+            type    : $(this).attr('method'),
+            data    : $(this).serialize(),
+            success : function() {
+                         $("#feedback_form")[0].reset();
+                         $("#modal_success").modal();
+                         
+                         // alert('Form is successfully submitted');       
+                      },
+            error   : function(){
+                         $("#modal_fail")[0].modal();
+                         // alert('Something wrong');
+                      }
+        });
+
+        return false;
+    });
+
+});
+
 
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
