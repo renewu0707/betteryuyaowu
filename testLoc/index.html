@@ -91,12 +91,14 @@
         var mapDiv = document.getElementById('map');
         var map = new google.maps.Map(mapDiv, {
             center: {lat: 49.246292, lng: -123.116226},
-            zoom: 10
+            zoom: 16,
+            mapTypeId : google.maps.MapTypeId.ROADMAP
         });
         
         // get current location and draw a marker on that location
         geoCurrentLoc(map);
 
+    
         // watchLoc(map);
 
       }
