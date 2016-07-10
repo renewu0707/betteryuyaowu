@@ -8,7 +8,7 @@ function drawMarker(map,position){
         map: map,
         icon: image,
         draggable: true,
-        animation: google.maps.Animation.DROP
+        // animation: google.maps.Animation.DROP
       });
 
       // locationMarker.addListener('click', toggleBounce);

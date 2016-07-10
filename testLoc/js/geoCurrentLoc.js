@@ -31,10 +31,10 @@ function  geoCurrentLoc(map) {
 
   // Create the LatLngBounds object that will be used to fit the view to the points range
   // place the markers to the polyline's point
-      var latLngBounds = new google.maps.LatLngBounds();
+      // var latLngBounds = new google.maps.LatLngBounds();
 
       for(var i = 0; i < path.length; i++) {
-        latLngBounds.extend(path[i]);
+        // latLngBounds.extend(path[i]);
         // Place the marker
         drawMarker(map, path[i]);
         // new google.maps.Marker({
@@ -54,7 +54,7 @@ function  geoCurrentLoc(map) {
       });
 
       // Fit the bounds of the generated points
-      map.fitBounds(latLngBounds);
+      // map.fitBounds(latLngBounds);
   
   // return pos;
   // $('#myModal').modal('show') 
