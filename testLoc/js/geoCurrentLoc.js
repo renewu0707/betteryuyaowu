@@ -25,32 +25,41 @@ function  geoCurrentLoc(map) {
       map.setCenter(pos);
  
       path.push(new google.maps.LatLng(pos.lat, pos.lng));
+      // path.push(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
 
-      console.log(path);
 
 
   // Create the LatLngBounds object that will be used to fit the view to the points range
   // place the markers to the polyline's point
-      // var latLngBounds = new google.maps.LatLngBounds();
+      var latLngBounds = new google.maps.LatLngBounds();
 
       for(var i = 0; i < path.length; i++) {
-        // latLngBounds.extend(path[i]);
+        latLngBounds.extend(path[i]);
+        // latLngBounds.extend(flightPlanCoordinates[i]);
         // Place the marker
         drawMarker(map, path[i]);
+        // drawMarker(map, flightPlanCoordinates[i]);
         // new google.maps.Marker({
         //   map: map,
         //   position: path[i],
         //   title: "Point " + (i + 1)
         // });
       }
-
+    
+  //   var flightPlanCoordinates = [
+  //   {lat: 37.772, lng: -122.214},
+  //   {lat: 21.291, lng: -157.821},
+  //   {lat: -18.142, lng: 178.431},
+  //   {lat: -27.467, lng: 153.027}
+  // ];
     // Creates the polyline object
       var polyline = new google.maps.Polyline({
         map: map,
         path: path,
+        // path: flightPlanCoordinates,
         strokeColor: '#0000FF',
         strokeOpacity: 0.7,
-        strokeWeight: 1
+        strokeWeight: 3
       });
 
       // Fit the bounds of the generated points
@@ -60,18 +69,19 @@ function  geoCurrentLoc(map) {
   // $('#myModal').modal('show') 
   // message.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
     // Create the polyline's points
-          // for(var i = 0; i < 5; i++) {
-          //   // Create a random point using the user current position and a random generated number.
-          //   // The number will be once positive and once negative using based on the parity of i
-          //   // and to reduce the range the number is divided by 10
-          //   path.push(
-          //     new google.maps.LatLng(
-          //       position.coords.latitude + (Math.random() / 10 * ((i % 2) ? 1 : -1)),
-          //       position.coords.longitude + (Math.random() / 10 * ((i % 2) ? 1 : -1))
-          //     )
-          //   );
-          // }
-
+      //     for(var i = 0; i < 5; i++) {
+      //       // Create a random point using the user current position and a random generated number.
+      //       // The number will be once positive and once negative using based on the parity of i
+      //       // and to reduce the range the number is divided by 10
+      //       path.push(
+      //         new google.maps.LatLng(
+      //           position.coords.latitude + (Math.random() / 10 * ((i % 2) ? 1 : -1)),
+      //           position.coords.longitude + (Math.random() / 10 * ((i % 2) ? 1 : -1))
+      //         )
+      //       );
+      //     }
+      console.log(path);
+ 
    
 
   };
