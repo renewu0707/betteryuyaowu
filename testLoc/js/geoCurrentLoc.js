@@ -9,6 +9,9 @@ function  geoCurrentLoc(map) {
     return;
   }
   
+   // save the position history
+  var path = [];
+
   function success(position) {
       var pos = {
         lat: position.coords.latitude,
@@ -20,10 +23,7 @@ function  geoCurrentLoc(map) {
   
   // move the map center to current position
       map.setCenter(pos);
-
-  // save the position history
-      var path = [];
-      
+ 
       path.push(new google.maps.LatLng(pos.lat, pos.lng));
 
       console.log(path);
