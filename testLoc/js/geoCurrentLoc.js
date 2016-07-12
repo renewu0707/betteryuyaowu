@@ -96,7 +96,7 @@ function  geoCurrentLoc(map) {
   var watchID = null;
 
   var options = {
-    enableHighAccuracy: true,
+    enableHighAccuracy: false,
     timeout: 5000,
     maximumAge: 0
   };

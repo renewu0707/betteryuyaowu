@@ -95,10 +95,11 @@
             mapTypeId : google.maps.MapTypeId.ROADMAP
         });
         
-        // get current location and draw a marker on that location
+        // get current location and draw a marker(a circle) on that location
+        //when mobile device moves, draw a polyline on the route, and a marker(a circle) on each changed locations
         geoCurrentLoc(map);
 
-    
+
         // watchLoc(map);
 
       }

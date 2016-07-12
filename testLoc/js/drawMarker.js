@@ -1,7 +1,7 @@
 // function drawMarker(map,lat,lng){
 function drawMarker(map,position){
       
-      var image = 'img/locationMarker.png';
+      var image = 'img/circleMarker.png';
       var locationMarker = new google.maps.Marker({
         // position: {lat: lat, lng: lng},
         position: position,
